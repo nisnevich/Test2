@@ -1,0 +1,37 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.3.31'
+    id 'org.jetbrains.intellij' version '0.3.7'
+}
+group = "kotlin-plugin-sanity-test"
+version = "0.0.1"
+repositories {
+    mavenCentral()
+    jcenter()
+
+    maven {
+        url "https://repo.labs.intellij.net/intellij"
+    }
+}
+
+ext.rr_version = "0.1.87"
+
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    compile "com.jetbrains.test:remote-robot:$rr_version"
+    compile 'com.willowtreeapps.assertk:assertk-jvm:0.12'
+}
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+test {
+    useJUnitPlatform()
+}

@@ -1,0 +1,13 @@
+version: '2.1'
+services:
+  idea1:
+    environment:
+      - container.number=1
+      - VNC_PW=1
+    ports:
+      - "8081:8080"
+      - "8181:8180"
+      - "5901:5901"
+      - "6901:6901"
+    dns: 172.20.200.17
+    image: docker-registry.labs.intellij.net/nizienko/idea-img:latest
