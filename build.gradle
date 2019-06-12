@@ -13,7 +13,7 @@ repositories {
     }
 }
 
-ext.rr_version = "0.1.87"
+ext.rr_version = "0.1.88"
 
 
 dependencies {

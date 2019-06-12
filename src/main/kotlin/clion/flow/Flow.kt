@@ -15,7 +15,7 @@ inline fun usingLocalContainer(crossinline test: RemoteRobot.() -> Unit) {
 
     runBlocking {
         try {
-            log.info("You can watch the test at ${ideaNode.urls.noVncUrl}")
+            log.info("You can watch the test at ${ideaNode.urls.noVncUrl}/?password=1")
             ideaNode.runIde("clion", "nightly")
             remoteRobot.test()
         } finally {
