@@ -1,6 +1,9 @@
 package clion.flow
 
 import com.jetbrains.test.*
+import com.jetbrains.test.ide.Ide
+import com.jetbrains.test.ide.IdeFromTeamcity
+import com.jetbrains.test.ide.IdeName
 import kotlinx.coroutines.runBlocking
 import plugins.PLUGIN_KOTLIN_MASTER
 
@@ -18,11 +21,7 @@ inline fun usingLocalContainer(crossinline test: RemoteRobot.() -> Unit) {
         try {
             log.info("You can watch the test at ${ideaNode.urls.noVncUrl}/?password=1")
             ideaNode.runIde(
-                    "clion",
-                    "tc",
-                    buildConfigurationId = "ijplatform_IjPlatform191_Cidr_CLion_Installers",
-                    artifactName = "CLion-191.7974",
-                    requiredPlugins = listOf(PLUGIN_KOTLIN_MASTER))
+                    IDE_CLION, listOf(PLUGIN_KOTLIN_MASTER))
             remoteRobot.test()
         } finally {
             ideaNode.killIde()
@@ -30,3 +29,11 @@ inline fun usingLocalContainer(crossinline test: RemoteRobot.() -> Unit) {
     }
 }
 
+
+val IDE_CLION: Ide
+    get() {
+        val buildConfigurationId =
+                System.getProperty("clion.buildConfigurationId") ?: "ijplatform_master_CIDR_CLion_Installers"
+        val buildNumber = System.getProperty("clion.buildNumber")
+        return IdeFromTeamcity.ideArtifactWithDefaultNamePattern(IdeName.CLION, buildConfigurationId, buildNumber = buildNumber)
+    }
