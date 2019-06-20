@@ -13,13 +13,15 @@ repositories {
     }
 }
 
-ext.rr_version = "0.1.88"
+ext.rr_version = "0.1.91"
 
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
     compile "com.jetbrains.test:remote-robot:$rr_version"
     compile 'com.willowtreeapps.assertk:assertk-jvm:0.12'
+    compile "org.jetbrains.teamcity:teamcity-rest-client:1.7.0"
+
 }
 compileKotlin {
     kotlinOptions {
