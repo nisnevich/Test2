@@ -7,11 +7,10 @@ import com.jetbrains.test.RemoteRobot
 import com.jetbrains.test.data.RemoteComponent
 import com.jetbrains.test.fixtures.ComponentFixture
 import com.jetbrains.test.fixtures.ContainerFixture
-import models.platfrom.fixtures.commonComponents.*
-import models.platfrom.fixtures.commonComponents.ComboBoxFixture.Companion.bySelectedItem
-import models.platfrom.fixtures.commonComponents.JButtonFixture.Companion.byText
+import platform.pageObject.commonComponents.ComboBoxFixture.Companion.bySelectedItem
+import platform.pageObject.commonComponents.JButtonFixture.Companion.byText
 import platform.pageObject.commonComponents.JDialogFixture.Companion.byTitle
-import models.platfrom.fixtures.commonComponents.JListFixture.Companion.byType
+import platform.pageObject.commonComponents.JListFixture.Companion.byType
 import platform.step
 import java.awt.Container
 import java.time.Duration

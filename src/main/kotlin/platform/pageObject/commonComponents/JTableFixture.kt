@@ -1,6 +1,6 @@
 @file:Suppress("NOTHING_TO_INLINE")
 
-package models.platfrom.fixtures.commonComponents
+package platform.pageObject.commonComponents
 
 import com.jetbrains.test.RemoteRobot
 import com.jetbrains.test.data.*

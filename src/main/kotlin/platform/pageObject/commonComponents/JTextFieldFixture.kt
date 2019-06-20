@@ -1,4 +1,4 @@
-package models.platfrom.fixtures.commonComponents
+package platform.pageObject.commonComponents
 
 import com.jetbrains.test.RemoteRobot
 import com.jetbrains.test.data.RemoteComponent
@@ -22,7 +22,7 @@ class JTextFieldFixture(
         fun byLabel(remoteRobot: RemoteRobot, name: String): JTextFieldFixture {
             return step("Search text field for label '$name'") {
                 val list = remoteRobot.findAll<JTextFieldFixture>(findBy = byType())
-                val labelY = remoteRobot.find<JLabelFixture>(findBy = JLabelFixture.byText(name)).let {fixture ->
+                val labelY = remoteRobot.find<JLabelFixture>(findBy = JLabelFixture.byText(name)).let { fixture ->
                     remoteRobot.retrieve(fixture) {
                         this.component.locationOnScreen.y
                     }

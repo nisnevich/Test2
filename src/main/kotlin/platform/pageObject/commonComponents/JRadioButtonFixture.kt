@@ -1,4 +1,4 @@
-package models.platfrom.fixtures.commonComponents
+package platform.pageObject.commonComponents
 
 import com.jetbrains.test.RemoteRobot
 import com.jetbrains.test.data.RemoteComponent

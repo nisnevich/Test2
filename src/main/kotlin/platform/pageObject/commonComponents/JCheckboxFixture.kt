@@ -1,4 +1,4 @@
-package models.platfrom.fixtures.commonComponents
+package platform.pageObject.commonComponents
 
 import assertk.Assert
 import assertk.assertions.support.expected

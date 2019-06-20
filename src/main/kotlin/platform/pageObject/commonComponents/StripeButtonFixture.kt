@@ -5,6 +5,7 @@ import com.jetbrains.test.RemoteRobot
 import com.jetbrains.test.data.RemoteComponent
 import com.jetbrains.test.data.RobotContext
 import com.jetbrains.test.data.componentAs
+import platform.pageObject.commonComponents.JButtonFixture
 import java.awt.Component
 
 class StripeButtonFixture(

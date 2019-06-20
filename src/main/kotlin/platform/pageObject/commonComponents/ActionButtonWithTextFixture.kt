@@ -1,4 +1,4 @@
-package models.platfrom.fixtures.commonComponents
+package platform.pageObject.commonComponents
 
 import com.intellij.openapi.actionSystem.impl.ActionButtonWithText
 import com.jetbrains.test.RemoteRobot

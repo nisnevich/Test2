@@ -1,4 +1,4 @@
-package models.platfrom.fixtures.commonComponents
+package platform.pageObject.commonComponents
 
 import com.intellij.ui.EngravedLabel
 import com.intellij.ui.components.JBList
