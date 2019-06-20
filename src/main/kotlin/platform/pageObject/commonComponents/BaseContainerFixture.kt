@@ -1,6 +1,5 @@
-package models.platfrom.fixtures.commonComponents
+package platform.pageObject.commonComponents
 
-import com.intellij.ide.structureView.newStructureView.StructureViewComponent
 import com.intellij.openapi.actionSystem.impl.ActionMenuItem
 import com.intellij.ui.HyperlinkLabel
 import com.intellij.ui.components.labels.LinkLabel
@@ -8,9 +7,10 @@ import com.jetbrains.test.RemoteRobot
 import com.jetbrains.test.data.RemoteComponent
 import com.jetbrains.test.fixtures.ComponentFixture
 import com.jetbrains.test.fixtures.ContainerFixture
+import models.platfrom.fixtures.commonComponents.*
 import models.platfrom.fixtures.commonComponents.ComboBoxFixture.Companion.bySelectedItem
 import models.platfrom.fixtures.commonComponents.JButtonFixture.Companion.byText
-import models.platfrom.fixtures.commonComponents.JDialogFixture.Companion.byTitle
+import platform.pageObject.commonComponents.JDialogFixture.Companion.byTitle
 import models.platfrom.fixtures.commonComponents.JListFixture.Companion.byType
 import platform.step
 import java.awt.Container

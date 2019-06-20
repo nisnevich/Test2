@@ -3,7 +3,7 @@ package clion.pageObject
 import com.intellij.openapi.wm.impl.IdeFrameImpl
 import com.jetbrains.test.RemoteRobot
 import com.jetbrains.test.data.RemoteComponent
-import models.platfrom.fixtures.commonComponents.BaseContainerFixture
+import platform.pageObject.commonComponents.BaseContainerFixture
 import platform.step
 
 

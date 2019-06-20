@@ -4,7 +4,7 @@ import com.intellij.openapi.wm.impl.welcomeScreen.FlatWelcomeFrame
 import com.jetbrains.test.RemoteRobot
 import com.jetbrains.test.data.RemoteComponent
 import com.jetbrains.test.fixtures.dataExtractor.txt
-import models.platfrom.fixtures.commonComponents.BaseContainerFixture
+import platform.pageObject.commonComponents.BaseContainerFixture
 import platform.step
 
 

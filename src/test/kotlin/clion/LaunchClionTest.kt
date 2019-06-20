@@ -5,6 +5,7 @@ import clion.pageObject.clionFrame
 import clion.pageObject.clionWelcomeFrame
 import org.junit.Test
 
+
 class LaunchClionTest {
 
     @Test

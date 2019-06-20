@@ -3,6 +3,7 @@ package models.platfrom.fixtures.commonComponents
 import com.jetbrains.test.RemoteRobot
 import com.jetbrains.test.data.RemoteComponent
 import com.jetbrains.test.data.RobotContext
+import platform.pageObject.commonComponents.BaseContainerFixture
 import platform.step
 import java.awt.Component
 import javax.swing.JList
