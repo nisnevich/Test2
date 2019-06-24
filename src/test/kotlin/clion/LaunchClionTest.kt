@@ -10,6 +10,7 @@ class LaunchClionTest {
 
     @Test
     fun clickCreateNewProject() = usingLocalContainer {
+
         clionWelcomeFrame {
             createNewProject.click()
             button("Create").click()
@@ -18,7 +19,6 @@ class LaunchClionTest {
             dialog("Tip of the Day") {
                 button("Close").click()
             }
-            Thread.sleep(5000)
         }
     }
 }
