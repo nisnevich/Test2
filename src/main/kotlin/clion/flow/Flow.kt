@@ -29,12 +29,9 @@ inline fun usingLocalContainer(crossinline test: RemoteRobot.() -> Unit) {
     }
 }
 
-
 val IDE_CLION: Ide
-    get() {
-        val buildConfigurationId =
-                System.getProperty("clion.buildConfigurationId") ?: "ijplatform_IjPlatform191_Cidr_CLion_Installers"
-        val buildNumber = System.getProperty("clion.buildNumber")
-        val artifactPattern = System.getProperty("clion.artifactPattern")
-        return IdeFromTeamcity.create(IdeName.CLION, buildConfigurationId, artifactPattern, buildNumber)
-    }
+    get() = IdeFromTeamcity.create(
+            IdeName.CLION,
+            Configuration.clionConfigurationId,
+            Configuration.clionArrtifactPattern,
+            Configuration.clionBuildNumber)
