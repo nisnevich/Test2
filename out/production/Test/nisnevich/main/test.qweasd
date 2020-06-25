@@ -1,0 +1,11 @@
+public class SomeClass {
+
+    protected int protectedField = 1;
+
+    public String foo(String bar) {
+        int a = 1/1;
+        return bar;
+    }
+
+    void m(int i, int b, int c, int d, int e, int f, int g, int h) {}
+}
